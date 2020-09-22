@@ -1,7 +1,7 @@
 import {ConsentStoreCookie} from "@/store/consentStoreCookie.ts"
 import {ConsentStoreLocal} from "@/store/consentStoreLocal.ts"
 
-export const enum ConsentStoreSource {
+export enum ConsentStoreSource {
   /**
    * Every request will include an extra cookie to signal consent was given.
    *

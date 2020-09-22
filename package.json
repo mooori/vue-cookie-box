@@ -4,7 +4,7 @@
   "description": "Show a cookie banner and optionally let user enable/disable cookies",
   "main": "./dist/vue-cookie-box.common.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --https",
     "build": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --name vue-cookie-box src/components/CookieBox.vue",
     "test:unit": "vue-cli-service test:unit",
