@@ -1,0 +1,44 @@
+$padding-h: 1em;
+$padding-v: 0.5em;
+$padding-v--narrow: 0.5em;
+
+$border: 1px solid;
+
+@mixin basics {
+  // From pure-buttons.
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-user-drag: none;
+  user-select: none;
+
+  border: $border; /* always border for same height of BaseButtonOutline */
+  text-decoration: none;
+  border-radius: 0px;
+
+  &:focus { outline: 0; }
+
+  /* https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms#Fonts_and_text */
+  font-size   : 100%;
+
+  /* https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms#Box_model */
+  margin: 0;
+
+  cursor: pointer;
+  padding: $padding-v $padding-h;
+
+  /* Firefox: Get rid of the inner focus border */
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+
+  &[disabled] {
+    background-image: none;
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+    pointer-events: none;
+  }
+}
