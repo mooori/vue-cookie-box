@@ -8,7 +8,7 @@ describe("ConsentStoreLocal", () => {
 
   const key = "vue-cookie-box__consent"
 
-  it("has no consent for clean localStorage", () => {
+  it("has no consent for clean ConsentStore", () => {
     const s = new ConsentStoreLocal()
     expect(s.hasConsent()).toBe(false)
   })
@@ -20,7 +20,7 @@ describe("ConsentStoreLocal", () => {
     expect(s.hasConsent()).toBe(true)
   })
 
-  it("retrieves consent from localStorage", () => {
+  it("retrieves consent from ConsentStore", () => {
     localStorage.setItem(key, "1")
     const s = new ConsentStoreLocal()
     expect(s.hasConsent()).toBe(true)
