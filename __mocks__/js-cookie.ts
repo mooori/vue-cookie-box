@@ -35,4 +35,8 @@ Cookie.set = (
   return value
 }
 
+Cookie.remove = (name: string, options?: allCookie.CookieAttributes): void => {
+  delete store[name]
+}
+
 export default Cookie
