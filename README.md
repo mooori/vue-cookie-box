@@ -9,7 +9,7 @@ Work in progress...
 npm install vue-cookie-box --save
 ```
 
-## Template
+## Component
 ```html
 <CookieBox />
 ```
@@ -24,6 +24,9 @@ export default {
   }
 }
 ```
+
+# Styles
+Don't scope styles to allow consumer overrides.
 
 # Contribution
 
