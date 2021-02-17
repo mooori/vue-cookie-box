@@ -26,7 +26,7 @@ export default {
 ```
 
 # Styles
-Don't scope styles to allow consumer overrides.
+Don't scope styles of components which should accept overrides by consumer.
 
 # Contribution
 
