@@ -33,3 +33,11 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style lang="scss">
+.base-link {
+  &:visited {
+    color: inherit;
+  }
+}
+</style>
