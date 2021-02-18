@@ -3,6 +3,7 @@
     <CookieBoxBanner
       v-if="!hasConsent"
       :privacy-link="privacyLink"
+      :banner-style="bannerStyle"
       @accept="persistConsent"
     />
   </div>
@@ -12,7 +13,7 @@
 import Vue, {PropType} from "vue"
 
 import {ConsentStoreSource, newConsentStore} from "@/store/consentStore.ts"
-import CookieBoxBanner from "@/components/CookieBoxBanner.vue"
+import CookieBoxBanner, {BannerStyle} from "@/components/CookieBoxBanner.vue"
 import {componentProp as linkProp} from "@/model/Link.ts"
 
 export default Vue.extend({
@@ -26,7 +27,12 @@ export default Vue.extend({
       required: true
     },
 
-    privacyLink: linkProp
+    privacyLink: linkProp,
+
+    bannerStyle: {
+      type: Object as PropType<BannerStyle>,
+      default: () => ({})
+    }
   },
 
   data() {
