@@ -10,10 +10,13 @@ npm install vue-cookie-box --save
 ```
 
 ## Component
+
+### `<template>`
 ```html
 <CookieBox />
 ```
 
+### `<script>`
 ```javascript
 import "vue-cookie-box/dist/vue-cookie-box.css"
 import CookieBox from "vue-cookie-box"
@@ -25,8 +28,20 @@ export default {
 }
 ```
 
+### `<style>`
+```css
+/* Or use CookieBox's bannerStyle property. */
+.cookie-box-banner {
+  background-color: blue;
+}
+```
+
 # Styles
 Don't scope styles of components which should accept overrides by consumer.
+
+# Todo
+- [] allow custom content via `<slot>`
+- [] i18n
 
 # Contribution
 
