@@ -11,6 +11,9 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    // Declarations are required for using lib in ts projects.
+    "declaration": true,
+    "declarationDir": "dist",
     "types": [
       "webpack-env",
       "jest"

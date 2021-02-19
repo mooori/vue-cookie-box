@@ -1,6 +1,6 @@
 {
   "name": "vue-cookie-box",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Show a cookie banner and optionally let user enable/disable cookies",
   "main": "./dist/vue-cookie-box.common.js",
   "scripts": {
