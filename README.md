@@ -19,7 +19,7 @@ npm install vue-cookie-box --save
 ### `<script>`
 ```javascript
 import "vue-cookie-box/dist/vue-cookie-box.css"
-import CookieBox from "vue-cookie-box"
+import {CookieBox} from "vue-cookie-box"
 
 export default {
   components: {
@@ -36,12 +36,18 @@ export default {
 }
 ```
 
+# `paths` (tsconfig)
+Don't use path subsitution (e.g. `import X from @/src/...`) inside `src`. It breaks emitted typings when imported as npm package.
+
+Ok to use in `tests`.
+
 # Styles
 Don't scope styles of components which should accept overrides by consumer.
 
 # Todo
 - [] allow custom content via `<slot>`
 - [] i18n
+- [] make `ConsentStoreSource` string enum and export it
 
 # Contribution
 

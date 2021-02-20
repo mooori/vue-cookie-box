@@ -1,12 +1,13 @@
 {
   "name": "vue-cookie-box",
-  "version": "0.1.8",
+  "version": "0.2.1",
   "description": "Show a cookie banner and optionally let user enable/disable cookies",
-  "main": "./dist/vue-cookie-box.common.js",
+  "main": "./dist/vue-cookie-box.umd.min.js",
+  "types": "./dist/src/index.d.ts",
   "scripts": {
     "serve": "vue-cli-service serve --https",
     "build": "vue-cli-service build",
-    "build:lib": "vue-cli-service build --target lib --name vue-cookie-box src/components/CookieBox.vue",
+    "build:lib": "vue-cli-service build --target lib --name vue-cookie-box src/index.ts",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },

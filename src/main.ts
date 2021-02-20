@@ -1,3 +1,5 @@
+// Used by `npm run serve` (development).
+
 import Vue from "vue"
 import App from "./App.vue"
 
