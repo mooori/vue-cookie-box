@@ -12,9 +12,9 @@
 <script lang="ts">
 import Vue, {PropType} from "vue"
 
-import {ConsentStoreSource, newConsentStore} from "@/store/consentStore.ts"
-import CookieBoxBanner, {BannerStyle} from "@/components/CookieBoxBanner.vue"
-import {componentProp as linkProp} from "@/model/Link.ts"
+import {ConsentStoreSource, newConsentStore} from "../store/consentStore"
+import CookieBoxBanner, {BannerStyle} from "./CookieBoxBanner.vue"
+import {componentProp as linkProp} from "../model/Link"
 
 export default Vue.extend({
   components: {

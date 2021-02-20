@@ -1,5 +1,5 @@
-import {ConsentStoreCookie} from "@/store/consentStoreCookie.ts"
-import {ConsentStoreLocal} from "@/store/consentStoreLocal.ts"
+import {ConsentStoreCookie} from "./consentStoreCookie"
+import {ConsentStoreLocal} from "./consentStoreLocal"
 
 export enum ConsentStoreSource {
   /**

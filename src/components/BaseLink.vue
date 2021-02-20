@@ -12,7 +12,7 @@
 <script lang="ts">
 import Vue, {PropType} from "vue"
 
-import {Link} from "@/model/Link.ts"
+import {Link} from "../model/Link"
 
 export default Vue.extend({
   props: {

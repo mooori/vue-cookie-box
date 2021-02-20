@@ -29,9 +29,9 @@
 <script lang="ts">
 import Vue, {PropType} from "vue"
 
-import BaseButtonOutline from "@/components/BaseButtonOutline.vue"
-import BaseLink from "@/components/BaseLink.vue"
-import {componentProp as linkProp} from "@/model/Link.ts"
+import BaseButtonOutline from "./BaseButtonOutline.vue"
+import BaseLink from "./BaseLink.vue"
+import {componentProp as linkProp} from "../model/Link"
 
 export interface BannerStyle {
   backgroundColor?: string;

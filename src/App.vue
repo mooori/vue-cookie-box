@@ -18,8 +18,8 @@
 <script lang="ts">
 import Vue from "vue"
 
-import {ConsentStoreSource} from "@/store/consentStore.ts"
-import CookieBox from "@/components/CookieBox.vue"
+import {ConsentStoreSource} from "./store/consentStore"
+import CookieBox from "./components/CookieBox.vue"
 
 export default Vue.extend({
   name: "App",

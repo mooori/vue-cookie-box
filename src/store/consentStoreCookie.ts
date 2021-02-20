@@ -1,6 +1,6 @@
 import Cookies from "js-cookie"
 
-import {ConsentStore} from "@/store/consentStore.ts"
+import {ConsentStore} from "./consentStore"
 
 /**
  * Implements ConsentStore for ConsentStoreSource.Cookie.

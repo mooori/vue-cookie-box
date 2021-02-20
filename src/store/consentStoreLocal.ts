@@ -1,4 +1,4 @@
-import {ConsentStore} from "@/store/consentStore.ts"
+import {ConsentStore} from "./consentStore"
 
 /**
  * Implements ConsentStore for ConsentStoreSource.LocalStorage.
