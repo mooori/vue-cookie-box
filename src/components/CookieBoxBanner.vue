@@ -36,6 +36,8 @@ import {componentProp as linkProp} from "../model/Link"
 export interface BannerStyle {
   backgroundColor?: string;
   color?: string;
+  /** Allow string since sass :export is `{[key: string]: string}`. */
+  zIndex?: number | string;
 }
 
 export default Vue.extend({
